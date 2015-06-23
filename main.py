@@ -5,9 +5,8 @@ from kivy.graphics import *
 
 class TestFloat(FloatLayout):
 	def draw_canvas(self):
-		with self.test_button.canvas:
-			Color(1,0,0)
-
+		with self.canvas:
+			Line(points=[100,100,200,200,300,400], dash_length=50)
 
 class LineAndDotApp(App):
 	pass
